@@ -24,4 +24,22 @@ export const GlobalStyles = createGlobalStyle`
         color: inherit;
     }
 
+    body{
+        margin: 0;
+        color: #FFFFFF;
+        font-family: "Barlow";
+        background-color: #0B0D17; 
+        padding: 24px;
+        
+    }
+
+    h1{
+        font-family: "Bellefair";
+        margin-block: 0;
+    }
+    h2{
+        font-family: "Barlow";
+        margin-block: 0;
+    }
+
 `;

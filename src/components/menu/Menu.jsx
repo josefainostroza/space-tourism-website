@@ -1,28 +1,31 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { StyledHamburguesa, StyledLink, StyledMenu } from "./menu.styles";
+import { MENU_INFO } from "../constants/menu";
 
 const Menu = () => {
+    const [isOpen, setIsOpen] = useState(false);
+	const menuImage = isOpen ? 'icon-close.svg' : 'icon-hamburger.svg';
+   
     return (
+    <>
+    <StyledHamburguesa src={`/assets/shared/${menuImage}`}
+				alt=''
+				onClick={() => setIsOpen(!isOpen)}
+			/>
     <nav>
-        <ul>
-            <li>
-                <Link to='/'>HOME</Link>
+        <StyledMenu $isOpen={isOpen}>
+            {MENU_INFO.map(item => (
+                <li key={item.id}>
+                    <StyledLink to={item.path} onClick={() => setIsOpen(false)}>
+                    {item.number} {item.title}
+                    </StyledLink>
                 </li>
-                <li>
-                    <Link to='/about'>ABOUT</Link>
-                </li>
-                <li>
-                    <Link to='/hola'>USER - hola</Link>
-                    <li>
+            ))}
 
-                    <Link to='/adios'>USER - adios</Link>
-                    </li>
-                    <li>
-
-                    <Link to='/josefa'>USER - josefa</Link>
-                    </li>
-                </li>
-                </ul>
-                </nav>
+        </StyledMenu>
+    </nav>
+    
+    </>
     );
-}
+};
 export default Menu;

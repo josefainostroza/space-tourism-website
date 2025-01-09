@@ -1,16 +1,21 @@
 import { Route, Routes } from "react-router-dom"
-import Home from "../components/pages/home/Home"
-import About from "../components/pages/about/About"
-import User from "../components/pages/user/User";
+import Home from "../pages/home/Home";
+import Layout from "../layouts/Layout";
+import { BACKGROUNDS } from "../components/constants/backgrounds";
+import Destination from "../pages/destination/Destination";
+import Crew from "../pages/crew/Crew";
+import Technology from "../pages/technology/Technology";
 const Router = () => {
     return (
         <Routes>
-            <Route path='/' element={ <Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/hola' element={<User name='hola' />} />
-            <Route path='/adios' element={<User name='adios' />} />
-            <Route path='/josefa' element={<User name='josefa' />} />
+            <Route path='/' element={<Layout/>}/>
+            <Route index  element={<Home />}/>
+            <Route path='/destination' element={<Destination />}/>
+            <Route path='/crew' element={<Crew />}/>
+            <Route path='/technology' element={<Technology />}/>
+                       {/* porque es index? */}
 
+            
         </Routes>
     );
 };

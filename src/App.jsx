@@ -6,8 +6,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<GlobalStyles />
-			<Router>
-				</Router>	
+			<Router/>
 				</BrowserRouter>
 	);
 };
