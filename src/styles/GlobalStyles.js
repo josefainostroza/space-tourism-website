@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
         color: #FFFFFF;
         font-family: "Barlow";
         background-color: #0B0D17; 
-        padding: 24px;
+        
         
     }
 
@@ -38,7 +38,7 @@ export const GlobalStyles = createGlobalStyle`
         margin-block: 0;
     }
     h2{
-        font-family: "Barlow";
+        font-family: "Barlow Condensed";
         margin-block: 0;
     }
 
