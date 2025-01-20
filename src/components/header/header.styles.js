@@ -1,13 +1,11 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-display: flex;
-justify-content:space-between;
-overflow-x: clip;
-padding: 24px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	overflow-x: clip;
+	padding: 24px;
 `;
 
-export {StyledHeader}
-
-
+export { StyledHeader };

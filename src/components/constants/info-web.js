@@ -1,51 +1,37 @@
 const DESTINATION = {
-    title: 'PICK YOUR DESTINATION',
-    section: {
-        0: 'MOON',
+	title: 'PICK YOUR DESTINATION',
+	section: {
+		0: 'MOON',
 		1: 'MARS',
 		2: 'EUROPA',
 		3: 'TITAN'
-    },
-    info: {
-        0: 'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.',
+	},
+	info: {
+		0: 'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.',
 		1: 'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!',
 		2: 'The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.',
 		3: 'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.'
-    }, 
-    distance: 'AVG. DISTANCE',
-    distanceKm: {
-        0: '384,400 km',
-		1: '225 MIL. km',
-		2: '628 MIL. km',
-		3: '1.6 BIL. km'
-    },
-    travel: 'Est. travel time',
-    travelDuration: {
-		0: '3 days',
-		1: '9 months',
-		2: '3 years',
-		3: '7 years'
 	},
-	images: {
-		mobile: {
-			0: '/assets/destination/image-moon.png',
-			1: '/assets/destination/image-mars.png',
-			2: '/assets/destination/image-europa.png',
-			3: '/assets/destination/image-titan.png'
-		},
-		tablet: {
-			0: '/assets/destination/image-moon.png',
-			1: '/assets/destination/image-moon.png',
-			2: '/assets/destination/image-moon.png',
-			3: '/assets/destination/image-moon.png'
-		},
-		desktop: {
-			0: '/assets/destination/image-moon.webp',
-			1: '/assets/destination/image-moon.webp',
-			2: '/assets/destination/image-moon.webp',
-			3: '/assets/destination/image-moon.webp'
-		}
-	}
+	distance: 'AVG. DISTANCE',
+	distanceKm: {
+		0: '384,400 KM',
+		1: '225 MIL. KM',
+		2: '628 MIL. KM',
+		3: '1.6 BIL. KM'
+	},
+	travel: 'Est. travel time',
+	travelDuration: {
+		0: '3 DAYS',
+		1: '9 MONTHS',
+		2: '3 YEARS',
+		3: '7 YEARS'
+	},
+	images: [
+		'/assets/destination/image-moon.png',
+		'/assets/destination/image-mars.png',
+		'/assets/destination/image-europa.png',
+		'/assets/destination/image-titan.png'
+	]
 };
 
 const CREW = {
